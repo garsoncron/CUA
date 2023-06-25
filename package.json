@@ -22,8 +22,7 @@
     "generate": "cd packages/db && yarn prisma generate",
     "build:ui": "cd packages/ui && yarn build",
     "build-desktop": "turbo run build:tauri --filter nextjs",
-    "studio": " cd packages/db && yarn prisma:studio",
-    "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader"
+    "studio": " cd packages/db && yarn prisma:studio"
   },
   "resolutions": {
     "esbuild": "0.15.5",
@@ -41,9 +40,12 @@
   },
   "devDependencies": {
     "@manypkg/cli": "^0.19.1",
+    "@types/react": "^18.2.14",
+    "@types/react-native": "^0.72.2",
     "eslint": "^8.21.0",
     "lerna-update-wizard": "^1.1.2",
     "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "turbo": "^1.4.2",
     "typescript": "^4.9.4"
   }
